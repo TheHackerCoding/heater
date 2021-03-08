@@ -1,4 +1,4 @@
-# `heater` - literally something to heat a cpu and eat up RAM (...fast?)
+# `heater` - things that I created to mess up your CPU, RAM, and storage
 
 ## File map
 
@@ -6,7 +6,8 @@
 src/ - files
     -/js - the source files for the Javascript part
     -/cpp - the source files for the C++ part
-make.py - the holy file to compile everything
+make.py - the holy file to compile everything (which isn't being used)
+Makefile - the compiler for everything (that's actually being used)
 ```
 ## DISCLAMER
 
@@ -22,8 +23,8 @@ The only purpose I made this was for people to mess around with their friends wi
 
 ## Extra info
 
-This has only been tested on Ubuntu Linux 20.04 (specifically [BackBox Linux 7](https://www.backbox.org/) if it matters) but should run on any os (Linux, Windows, and MacOS)
+This has only been tested on Ubuntu Linux 20.04 (specifically [BackBox Linux 7](https://www.backbox.org/) if it matters) but should run on any os (Linux, Windows, and MacOS) if you have make, node, and gcc
 
 ## Compile
 
-`python3 make.py`
+`make ` _the name of the file_

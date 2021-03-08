@@ -116,3 +116,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 yarn.lock
+
+.vscode/
+package-lock.json
+bin/

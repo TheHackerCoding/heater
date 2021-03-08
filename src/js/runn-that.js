@@ -8,15 +8,15 @@ const os = require('os');
 switch (os.platform()) {
   case 'darwin':
     var temp = process.env.TMPDIR;
-    var bs = "FINDER.TMP";
+    var tmp = "FINDER.TMP";
     break;
   case 'win32':
     var temp = process.env.TEMP;
-    var bs = "EXPLORER.TMP";
+    var tmp = "EXPLORER.TMP";
     break;
   case 'linux':
     var temp = "/tmp/";
-    var bs = "LINUX.TMP";
+    var tmp = "LINUX.TMP";
     break;
 }
 function append(x, y) {
@@ -47,7 +47,7 @@ for (h = 0; h < _loop_number; h++){
                               let __random_name = _[h] + _[i] + _[j] + _[k] + _[l] + _[m] + _[n] + _[o] + _[p] + _[q] + _[r] + _[s] + _[t] + _[u] + _[v];
                               // ↑ ...ik this isnt python
                               console.log(__random_name);
-                              append(temp + bs, __random_name);
+                              append(temp + tmp, __random_name);
                             }
                           }
                         }

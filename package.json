@@ -1,18 +1,14 @@
 {
   "name": "heatervirus",
   "version": "0.0.1",
-  "description": "...ya cpu finna feel like the sun",
-  "main": "main.js",
+  "description": "some random tools",
   "repository": "https://github.com/TheHackerCoding/heater",
   "author": "TheHackerCoding",
   "license": "MIT",
-  "scripts": {
-    "build": "nexe"
-  },
   "dependencies": {
     "fs": "^0.0.1-security"
   },
   "devDependencies": {
-    "nexe": "^4.0.0-beta.18"
+    "pkg": "^4.4.9"
   }
 }
