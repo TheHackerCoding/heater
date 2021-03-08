@@ -13,7 +13,6 @@ Makefile - the compiler for everything (that's actually being used)
 
 I'm not responsible for any damage you could cause using _heater_. Ultimately, there might be legal ramifications to doing any of this depending upon where you live, so you should check your local relevant legislation. Explicitly you might be acting illicitly by recording information without first informing the user interfacing with the organization, adequately allowing them a chance to stop the event that they aren't content with. I'm not experienced enough in its legalities to offer you appropriate guidance in that regard however. If you are doubtful, I recommend you don't do it.
 
-
 I insist, **DO NOT** use this program for any illegal or harmful
 purpose. Use it under your own risk and responsibilty.
 
@@ -27,4 +26,4 @@ This has only been tested on Ubuntu Linux 20.04 (specifically [BackBox Linux 7](
 
 ## Compile
 
-`make ` _the name of the file_
+`make` _the name of the file_
