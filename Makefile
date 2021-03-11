@@ -1,4 +1,5 @@
 OUT = bin/
+REQUIRED_BINS = python node npm gcc 
 ifeq ($(OS),Windows_NT)     # is Windows_NT on XP, 2000, 7, Vista, 10...
   OS_NAME = windows
 else
@@ -20,3 +21,10 @@ hell:
 	else
 		gcc src/cpp/calm -lstdc++ -o bin/calm
 	endif
+
+test: # tests for needed commands
+	$(foreach bin,$(REQUIRED_BINS),\
+    $(if $(shell command -v $(bin) 2> /dev/null),$(info Found `$(bin)`),$(error Please install `$(bin)`)))
+
+clean:
+	rmdir bin node_modules
